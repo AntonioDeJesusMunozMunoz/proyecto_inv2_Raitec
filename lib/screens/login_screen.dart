@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test_inv2/screens/login_pasajero_screen.dart';
 import 'package:test_inv2/screens/registrarse_screen.dart';
-//import 'pasajero_screen.dart';
 import 'login_conductor_screen.dart';
-//import 'registro_screen.dart';
+import 'package:test_inv2/utils.dart';
 
 import 'package:test_inv2/main.dart';
 

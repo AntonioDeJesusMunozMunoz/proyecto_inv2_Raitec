@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_inv2/main.dart';
 import 'pasajero_ruta_screen.dart';
 
 class PasajeroHomeScreen extends StatelessWidget {
@@ -9,32 +8,6 @@ class PasajeroHomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFBEBEBE),
-      bottomNavigationBar: GestureDetector(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const PasajeroRutaScreen()),
-            );
-          },
-          child: Container(
-            width: 100,
-            height: 50,
-            margin: EdgeInsetsGeometry.fromLTRB(0, 10, 0, 5),
-            decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.all(Radius.elliptical(20,10)),
-            ),
-            child: Center(
-                  child: Text(
-                    "ELEGIR RUTA",
-                    style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.black,
-                  ),
-                )
-            )
-          )
-      ),
       body: Stack(
         children: [
           // Elipse gris (cuenta)
@@ -249,6 +222,32 @@ class PasajeroHomeScreen extends StatelessWidget {
 
         ],
       ),
+      bottomNavigationBar: GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const PasajeroRutaScreen()),
+            );
+          },
+          child: Container(
+              width: 100,
+              height: 50,
+              margin: EdgeInsetsGeometry.fromLTRB(0, 10, 0, 5),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.all(Radius.elliptical(20,10)),
+              ),
+              child: Center(
+                  child: Text(
+                    "ELEGIR RUTA",
+                    style: TextStyle(
+                      fontSize: 35,
+                      color: Colors.black,
+                    ),
+                  )
+              )
+          )
+      )
     );
   }
 }

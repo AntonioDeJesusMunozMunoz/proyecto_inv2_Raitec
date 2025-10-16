@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_inv2/main.dart'; // Para acceder al diccionario global
+import 'package:test_inv2/utils.dart';
+import '../locals.dart';
 
 class RegistroScreen extends StatefulWidget {
   const RegistroScreen({super.key});

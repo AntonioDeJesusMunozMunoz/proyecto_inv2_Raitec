@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// Importa tu archivo principal donde tengas el diccionario
-import 'package:test_inv2/main.dart'; // Ajusta el path si es necesario
+import '../locals.dart';
 import 'conductor_home_screen.dart';
 
 class LoginConductorScreen extends StatefulWidget {
